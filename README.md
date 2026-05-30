@@ -26,7 +26,7 @@ Built as a single, dependency-light CLI that talks to serializd's JSON API direc
 ### With Docker (recommended)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/serializd-export.git
+git clone https://github.com/belepod/serializd-export.git
 cd serializd-export
 cp .env.example .env       # fill in SERIALIZD_EMAIL / SERIALIZD_PASSWORD / SERIALIZD_USERNAME
 docker build -t serializd-export .
@@ -50,7 +50,7 @@ Output files land in `./output/`.
 ### Without Docker (Node ≥ 18)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/serializd-export.git
+git clone https://github.com/belepod/serializd-export.git
 cd serializd-export
 cp .env.example .env       # fill in credentials
 npm install
