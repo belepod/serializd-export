@@ -1,0 +1,42 @@
+{
+  "name": "serializd-export",
+  "version": "1.0.0",
+  "description": "Export your serializd.com watch history (shows + diary) to JSON / CSV / Markdown / TXT. No native export? No problem.",
+  "type": "module",
+  "main": "src/cli.js",
+  "bin": {
+    "serializd-export": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "export": "node src/cli.js",
+    "discover": "node scripts/discover.js",
+    "probe": "node scripts/probe.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "serializd",
+    "tv",
+    "shows",
+    "export",
+    "backup",
+    "scraping",
+    "cli",
+    "docker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ]
+}

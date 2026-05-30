@@ -1,0 +1,12 @@
+services:
+  serializd-export:
+    build: .
+    image: serializd-export:latest
+    container_name: serializd-export
+    env_file:
+      - .env
+    volumes:
+      - ./output:/app/output
+    # Override the command per run, e.g.:
+    #   docker compose run --rm serializd-export --all --format json,csv,md
+    command: ["--preset", "standard", "--format", "json,csv"]
